@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Decodificador</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+  <header class="header">
+    <img class="header__logo" src="./assets/logo-code.svg" alt="logo">
+    <nav class="header__nav">
+      <a class="header__nav-link" href="" target="_blank">Sobre</a>
+      <a class="header__nav-link" href="" target="_blank">Linkedin</a>
+      <a class="header__nav-link" href="" target="_blank">Github</a>
+      <a class="header__nav-link" href="./assets/curriculo-cecilia-rodrigues-martins.pdf" target="_blank" download="">
+        <!-- <img src="./assets/download.svg" alt=""> -->
+        CV
+      </a>
+    </nav>
+  </header>
+  <main class="main">
+    <section class="main__decodificador">
+      <!-- <input class="main__decodificador-input" type="text" name="campo de texto" id="" placeholder="Digite seu texto..."> -->
+      <textarea class="main__decodificador-input" name="" id="" placeholder="Digite seu texto..." required></textarea>
+      <div class="main__alerta-span">
+        <img src="./assets/bi_exclamation-circle-fill.svg" alt="logo-alerta">
+        <span class="decodificador__alerta">
+          Apenas letras minúsculas e sem acento.
+        </span>
+      </div>
+      <div class="decodificador__botoes">
+        <button class="decodificador__botao decodificador__botao--criptografar">Criptografar</button>
+        <button class="decodificador__botao decodificador__botao--descriptografar" disabled>Descriptografar</button>
+      </div>
+    </section>
+    <aside class="main__texto-decodificado">
+      <div class="texto-decodificado__sem-texto">
+        <img src="./assets/undraw_page_not_found_re_e9o6.svg" alt="Ilustração de um rapaz sentado com uma lupa olhando um diamante">
+        <h3 class="texto-decodificado__titulo">Nenhum código gerado</h3>
+        <p class="texto-decodificado__descricao">Digite um texto que você deseja criptografar ou descriptografar.</p>
+      </div>
+      <div class="texto-decodificado__com-texto">
+        <p class="texto-decodificado__mensagem"></p>
+        <button class="texto-decodificado__botao decodificador__botao">Copiar</button>
+      </div>
+    </aside>
+  </main>
+  <footer class="footer">
+    <p>© Nenhum direito reservado kkkkkkkkkkkkkkk</p>
+    <p>Desenvolvido por mim :)</p>
+  </footer>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
