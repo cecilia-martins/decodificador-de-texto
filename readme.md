@@ -18,7 +18,7 @@ Este projeto é uma aplicação web simples que permite criptografar e descripto
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/seu-usuario/decodificador-texto.git
+   git clone https://github.com/cecilia-martins/decodificador-texto.git
 2. Abra o arquivo index.html no seu navegador.
 
 3. Digite o texto que deseja criptografar ou descriptografar.
