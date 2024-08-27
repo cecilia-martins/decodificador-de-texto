@@ -1,0 +1,19 @@
+:root {
+  --dark-pink-500: #DC67B5;
+  --dark-pink-600: #C63C91;
+  --dark-pink-700: #AB2B76;
+  --dark-pink-800: #8E2662;
+  --dark-pink-950: #480F30;
+  --light-pink-50: #FCF3FA;
+  --light-pink-100: #FAE9F6;
+  --light-pink-200: #F6D4ED;
+  --light-pink-300: #F0B1DE;
+  --light-pink-400: #E581C6;
+  --gray-100: #CED4DA;
+  --gray-200: #ADB5BD;
+  --gray-300: #868E96;
+  --gray-400: #495057;
+  --gray-500: #343A40;
+  --white: #ffffff;
+  --black-shadow: #0000002a;
+}

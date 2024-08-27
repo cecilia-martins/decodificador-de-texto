@@ -1,0 +1,210 @@
+.main {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 40px 60px 200px;
+}
+
+.main__decodificador {
+  align-self: center;
+}
+
+.main__decodificador-input {
+  background: var(--white);
+  width: 700px;
+  height: 500px;
+
+  border-radius: 30px;
+  /* offset-x | offset-y | blur-radius | spread-radius | color */
+  box-shadow: 0 10px 20px -8px var(--black-shadow);
+  padding: 40px;
+
+  resize: none; /* impede o usuário de redimensionar o campo */
+}
+
+.main__decodificador-input,
+.main__decodificador-input::placeholder {
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  color: var(--dark-pink-700);
+}
+
+.main__decodificador-input::placeholder {
+  font-size: 1.5rem;
+  /* margin: 40px; */
+}
+
+.main__decodificador-input {
+  font-size: 1.225rem;
+}
+
+.main__decodificador-input::-webkit-scrollbar {
+  width: 4px;
+  border-radius: 10px;
+}
+
+.main__decodificador-input::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 5px var(--gray-100);
+  border-radius: 10px;
+}
+
+.main__decodificador-input::-webkit-scrollbar-thumb:hover {
+  box-shadow: inset 0 0 5px var(--light-pink-400);
+}
+
+.main__decodificador-input:focus {
+  outline: none;
+}
+
+/* Alerta */
+.main__alerta-span {
+  margin-top: 20px;
+  display: flex;
+}
+
+.decodificador__alerta {
+  font-family: Roboto, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: var(--gray-400);
+}
+
+.main__alerta-span img {
+  margin-right: 5px;
+}
+
+/* Botoes */
+.decodificador__botoes {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 60px;
+}
+
+.decodificador__botao {
+  font-family: Poppins, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+
+  padding: 10px 32px;
+  border-radius: 12px;
+}
+
+.decodificador__botao--criptografar {
+  background-color: var(--dark-pink-700);
+  color: var(--white);
+  cursor: pointer;
+}
+
+.decodificador__botao--criptografar:hover {
+  background-color: var(--dark-pink-600);
+}
+
+.decodificador__botao--criptografar:active {
+  background-color: var(--dark-pink-800);
+  color: var(--white);
+}
+
+/* Botão descriptografar */
+.decodificador__botao--descriptografar {
+  border: 1px solid var(--light-pink-300);
+  background-color: var(--white);
+  color: var(--light-pink-300);
+}
+
+.decodificador__botao--descriptografar:not(:disabled) {
+  border: 1px solid var(--dark-pink-600);
+  background-color: var(--light-pink-50);
+  color: var(--dark-pink-600);
+  cursor: pointer;
+}
+
+.decodificador__botao--descriptografar:not(:disabled):hover {
+  background-color: var(--light-pink-100);
+}
+
+.decodificador__botao--descriptografar:not(:disabled):active {
+  border: 1px solid var(--dark-pink-700);
+  background-color: var(--light-pink-200);
+  color: var(--dark-pink-700);
+}
+
+.decodificador__botao--descriptografar:disabled {
+  cursor: not-allowed;
+}
+
+/* Campo decodificador sem texto*/
+.main__texto-decodificado {
+  background: var(--white);
+  width: 400px;
+  height: 655px;
+  border-radius: 30px;
+  box-shadow: 0 10px 20px -8px var(--black-shadow);
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.texto-decodificado__sem-texto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.texto-decodificado__titulo,
+.texto-decodificado__descricao {
+  font-family: Roboto, sans-serif;
+  text-align: center;
+}
+
+.texto-decodificado__titulo {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--gray-500);
+  padding-top: 90px;
+  width: 100%;
+}
+
+.texto-decodificado__descricao {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--gray-400);
+  padding-top: 16px;
+}
+
+/* Decodificado com texto */
+.texto-decodificado__com-texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%; /* Garante que a div ocupe toda a altura disponível */
+}
+
+.texto-decodificado__mensagem {
+  font-family: Roboto, sans-serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: var(--gray-400);
+  flex-grow: 1; /* Faz com que a mensagem ocupe o espaço disponível */
+}
+/* Botão copiar */
+.texto-decodificado__botao {
+  display: none;
+  background-color: var(--white);
+  color: var(--dark-pink-500);
+  border: 1.5px solid var(--dark-pink-500);
+}
+
+.texto-decodificado__botao:hover {
+  color: var(--dark-pink-600);
+  border: 1.5px solid var(--dark-pink-600);
+  cursor: pointer;
+}
+
+.texto-decodificado__botao:active {
+  color: var(--dark-pink-700);
+  background-color: var(--light-pink-50);
+  border: 1.5px solid var(--dark-pink-700);
+}
