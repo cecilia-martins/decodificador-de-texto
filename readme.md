@@ -1,5 +1,8 @@
 # Decodificador de Texto
 
+<img src="./assets/Captura de tela - decodificador de texto.png" alt="Captura de tela do projeto"/>
+
+
 Este projeto é uma aplicação web simples que permite criptografar e descriptografar textos com base em uma substituição de caracteres. A ferramenta transforma as vogais em códigos específicos para criptografia e faz o processo inverso para descriptografia.
 
 ## Funcionalidades
