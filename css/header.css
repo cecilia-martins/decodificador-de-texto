@@ -16,7 +16,6 @@
 }
 
 .header__logo {
-  /* border: 2px solid greenyellow; */
   width: 120px;
 
 }
@@ -25,11 +24,9 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* border: 2px solid palegreen; */
 }
 
 .header a {
-  /* border: 2px solid blue; */
   color: var(--dark-pink-700);
   font-size: 1.125rem;
   font-weight: 500;
@@ -41,7 +38,6 @@
   padding: 6px 18px;
   border-radius: 60px;
   margin: 20px;
-/* offset-x | offset-y | blur-radius | spread-radius | color */
   box-shadow: 0 4px 4px -4px var(--black-shadow);
 }
 

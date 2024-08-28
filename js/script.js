@@ -1,19 +1,9 @@
-//textarea
 const decodificadorInput = document.querySelector(".main__decodificador-input");
-//botão criptografar
-const btnCriptografar = document.querySelector(".decodificador__botao--criptografar"
-);
-//botão descriptografar
+const btnCriptografar = document.querySelector(".decodificador__botao--criptografar");
 const btnDescriptografar = document.querySelector(".decodificador__botao--descriptografar");
-
-// container com img que vai aparecer quando NÃO houver texto/mensagem
 const containerSemMensagem = document.querySelector(".texto-decodificado__sem-texto");
-
-// container todo que vai aparecer quando houver texto/mensagem
 const containerComMensagem = document.querySelector(".texto-decodificado__com-texto");
-//parágrafo onde vai aparecer o texto
 const paragrafoComMensagem = document.querySelector(".texto-decodificado__mensagem");
-//botão de copiar
 const btnCopiarMensagem = document.querySelector(".texto-decodificado__botao");
 
 const codificarTexto = (textoEncriptado) => {
@@ -65,7 +55,7 @@ const ativarBtnDescriptografar = () => {
   }
 }
 
-// remover container com imagem 
+// remove container com imagem 
 const removerContainer = () => {
   if (paragrafoComMensagem.innerHTML.trim() !== "") {
     containerSemMensagem.style = "display: none";
@@ -73,11 +63,12 @@ const removerContainer = () => {
   }
 }
 
+// Exibe botão copiar
 const exibirBtnCopiar = () => {
-  if (paragrafoComMensagem.innerHTML.trim() !== "") {  // Se houver texto no parágrafo
-    btnCopiarMensagem.style.display = "block";         // Exibe o botão
+  if (paragrafoComMensagem.innerHTML.trim() !== "") {
+    btnCopiarMensagem.style.display = "block";
   } else {
-    btnCopiarMensagem.style.display = "none";          // Esconde o botão
+    btnCopiarMensagem.style.display = "none";
   }
 };
 
@@ -90,10 +81,21 @@ const criptografarTexto = () => {
 };
 btnCriptografar.addEventListener("click", criptografarTexto);
 
-// descriptografar
+// Botão descriptografar
 const descriptografarTexto = () => {
   paragrafoComMensagem.innerHTML = descodificarTexto(paragrafoComMensagem.innerHTML);
 }
 btnDescriptografar.addEventListener("click", descriptografarTexto);
 
+// Função para copiar o texto
+const copiarTexto = () => {
+  const textoParaCopiar = paragrafoComMensagem.innerText; // Pega o texto do parágrafo
 
+  // Usando a Clipboard API
+  navigator.clipboard.writeText(textoParaCopiar).then(() => {
+    alert("Texto copiado com sucesso!"); // Exibe um alerta de confirmação
+  }).catch((err) => {
+    console.error("Falha ao copiar o texto: ", err); // Mostra um erro no caso de falha
+  });
+};
+btnCopiarMensagem.addEventListener("click", copiarTexto);

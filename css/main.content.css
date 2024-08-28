@@ -30,7 +30,6 @@
 
 .main__decodificador-input::placeholder {
   font-size: 1.5rem;
-  /* margin: 40px; */
 }
 
 .main__decodificador-input {
@@ -189,6 +188,7 @@
   color: var(--gray-400);
   flex-grow: 1; /* Faz com que a mensagem ocupe o espaço disponível */
 }
+
 /* Botão copiar */
 .texto-decodificado__botao {
   display: none;
